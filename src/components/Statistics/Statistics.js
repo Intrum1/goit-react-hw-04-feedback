@@ -1,9 +1,7 @@
 import { Component } from 'react';
 import styles from './Statistics.module.css'
 
-class Statistics extends Component {
-    render() {
-        const { good, neutral, bad, total, positivePercentage } = this.props;
+const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
         return (
             <div className={styles.Statistics}>
                 <p>Good:{good}</p>
@@ -14,6 +12,6 @@ class Statistics extends Component {
             </div>
         );
     }
-}
+
 
 export default Statistics

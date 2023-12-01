@@ -1,9 +1,7 @@
-import { Component } from 'react';
+import React from 'react';
 import styles from './Section.module.css'
 
-class Section extends Component {
-    render() {
-        const { title, children } = this.props;
+const Section = ({ title, children }) => {
 
         return (
             <div className={styles.section}>
@@ -12,6 +10,6 @@ class Section extends Component {
             </div>
         );
     }
-}
+
 
 export default Section
