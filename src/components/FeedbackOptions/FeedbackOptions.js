@@ -1,7 +1,8 @@
-import { Component } from 'react';
+import { useState } from 'react';
 import styles from './FeedbackOptions.module.css'
 
 class FeedbackOptions extends Component {
+const feedBack = useState();
 
     render() {
         const { options, onLeaveFeedback } = this.props;
